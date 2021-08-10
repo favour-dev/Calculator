@@ -7,12 +7,13 @@ body{
     background-color: hsl(222, 26%, 31%);
 }
 .container{
-    /* border: 1px solid white; */
-    width: 500px;
-    max-width: 600px;
-    margin: auto;
-    /* margin-top: 150px; */
-  
+    border: 1px solid white;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }
 /* Toogle Button */
 .tw-toggle {
@@ -22,9 +23,10 @@ body{
     border-radius: 20px;
     position:relative;
     margin-top: 10px;
+    margin-left: 10px;
     border: 2px solid #95A5A6;
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 25px;
 }
 .tw-toggle label {
     text-align: center;
@@ -36,7 +38,7 @@ body{
     margin: 0;
     text-align: center;
     padding: 2px 4px;
-    font-size: 15px;
+    font-size: 18px;
     /* cursor: pointer; */
 }
 .tw-toggle input {
@@ -47,14 +49,14 @@ body{
     cursor: pointer;
 }
 .tw-toggle span {
-    height: 19px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
     line-height: 21px;
     border-radius: 50%;
     background:#fff;
     display:block;
     position:absolute;
-    left: 22px;
+    left: 24px;
     top: 2px;
     transition:all 0.3s ease-in-out;
 }
@@ -79,47 +81,51 @@ body{
 }
    /* Top nav */
 .top-nav{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+}
+.container-full{
     display: flex;
     justify-content: space-between;
-    margin: 20px 15px;
+    margin-top: 20px;
 }
 .theme-section{
     display: flex;
 }
 .theme{
-    margin-top: 5px;
+    margin-top: 6px;
     margin-right: 10px;
     font-family: 'Pacifico', cursive;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 .calc{
     font-family: 'Dancing Script', cursive;
-    font-size: 22px;
+    font-size: 15px;
     color: white;
 }
 /* input-field-section */
 .input-field-section{
-    margin-bottom: 10px;
+    margin: 20px 0 20px 0;
 }
 #user-input{
-    width: 450px;
-    max-width: 500px;
-    margin-left: 20px;
     padding: 25px 0;
-    margin-bottom: 20px;
     background-color: hsl(224, 36%, 15%);
     color: white;
-    direction: rtl;
-    font-size: 32px;
-    /* border: none; */
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
 }
 /* calc buttons */
 .calc-buttons{
     background-color: hsl(224, 36%, 15%);
-    width: 450px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
     max-width: 500px;
-    margin-left: 20px;
     padding: 10px 0;
 }
 .key-buttons{
@@ -160,5 +166,19 @@ body{
 .equal{
     background-color: hsl(6, 70%, 34%);
     box-shadow: hsl(28, 16%, 65%) ;
+}
+
+@media (min-width: 700px)  {
+    .container{
+        border: 1px solid white;
+        width: 500px;
+        /* display: flex; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%)
+      
+    }  
 }
 /* toogle 2 */
