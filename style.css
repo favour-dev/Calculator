@@ -11,7 +11,7 @@ body{
     width: 500px;
     max-width: 600px;
     margin: auto;
-    margin-top: 150px;
+    /* margin-top: 150px; */
   
 }
 /* Toogle Button */
@@ -142,6 +142,7 @@ body{
   border: none;
   font-size: 30px;
   font-family: 'Dancing Script', cursive;
+  background-color: hsl(30, 25%, 89%);
 }
 .reset{
   width: 90% ;
