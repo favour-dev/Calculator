@@ -4,16 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(222, 26%, 31%);
+    background-color: hsl(224, 36%, 15%);
+    /* background-image: url(./images/favicon-32x32.png);
+    background-repeat:repeat;
+    background-position: 50% 50% ;
+    background-size: fit;     */
 }
 .container{
-    border: 1px solid white;
     width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: hsl(222, 26%, 31%);
 }
 /* Toogle Button */
 .tw-toggle {
@@ -66,7 +71,7 @@ body{
     color:#fff;
 }
 .tw-toggle input[value="true"]:checked ~ span{
-    background:hsl(6, 70%, 34%)0;
+    background:hsl(176, 100%, 44%);
     left: 46px;
 }
 .tw-toggle input[value="-1"]:checked ~ span{
@@ -76,7 +81,7 @@ body{
 .tw-toggle input[value="false"]:checked + label,.tw-toggle input[value="true"]:checked + label{
     color:#fff;
 }
-  .tw-toggle input[value="-1"]:checked + label{
+.tw-toggle input[value="-1"]:checked + label{
     color:#fff;
 }
    /* Top nav */
@@ -99,11 +104,14 @@ body{
     margin-right: 10px;
     font-family: 'Pacifico', cursive;
     font-size: 15px;
-    color: white;
+
 }
 .calc{
     font-family: 'Dancing Script', cursive;
     font-size: 15px;
+    
+}
+.the-color{
     color: white;
 }
 /* input-field-section */
@@ -127,6 +135,7 @@ body{
     width: 90%;
     max-width: 500px;
     padding: 10px 0;
+    margin-bottom: 40px;
 }
 .key-buttons{
     display: grid;
@@ -170,7 +179,7 @@ body{
 
 @media (min-width: 700px)  {
     .container{
-        border: 1px solid white;
+        /* border: 1px solid white; */
         width: 500px;
         /* display: flex; */
         position: absolute;

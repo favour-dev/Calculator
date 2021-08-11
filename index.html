@@ -21,20 +21,20 @@
     <div class="container">
       <div class="top-nav">
         <div class="container-full">
-          <div class="calc">
+          <div class="calc the-color">
             <h1>Calc</h1>
           </div>
           <div class="theme-section">
-            <div class="theme">
+            <div class="theme the-color">
               <p>Theme</p>
             </div>
             <div class="tw-toggle">
-              <input type="radio" name="toggle" value="false">
-              <label class="toggle toggle-yes"><p>1</p></i></label>
-              <input checked type="radio" name="toggle" value="-1">
-              <label class="toggle toggle-yes"><p>2</p></i></label>
-              <input type="radio" name="toggle" value="true">
-              <label class="toggle toggle-yes"><p>3</p></i></label>
+              <input onclick="toggle(1)" checked type="radio" name="toggle" value="false">
+              <label class="toggle toggle-yes"><p>1</p></label>
+              <input onclick="toggle(2)"  type="radio" name="toggle" value="-1">
+              <label class="toggle toggle-yes"><p>2</p></label>
+              <input onclick="toggle(3)" type="radio" name="toggle" value="true">
+              <label class="toggle toggle-yes"><p>3</p></label>
               <span></span>  
             </div>
           </div>
@@ -45,7 +45,7 @@
         <input type="number" name="" id="user-input" disabled>
       </div>
 
-      <div class="calc-buttons">
+      <div class="calc-buttons" id="button-container">
         <div class="key-buttons">
           <button id="seven" class="digits">7</button>
           <button id="eight" class="digits">8</button>
@@ -65,38 +65,16 @@
           <button id="multiply" class="digits">*</button>
         </div>
         <div class="result">
-          <button class="reset del-reset">Reset</button>
+          <button id="reset-button" class="reset del-reset">Reset</button>
           <button class="reset equal">=</button>
         </div>
       </div>
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </div> -->
   <!-- </div> -->
+  <script src="./calculator.js"></script>
 </body>
 </html>
