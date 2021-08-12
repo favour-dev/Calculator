@@ -41,6 +41,7 @@ function toggle(state){
         buttonSection.style.backgroundColor = "hsl(0, 5%, 81%)"
         deleteButton.style.backgroundColor = "hsl(185, 42%, 37%)"
         resetButton.style.backgroundColor = "hsl(185, 42%, 37%)"
+        resetButton.style.color = "black"
         equalButton.style.backgroundColor = "hsl(25, 98%, 40%)"
         toggleBackground.style.backgroundColor = "hsl(0, 5%, 81%)"
     
@@ -55,9 +56,11 @@ function toggle(state){
         document.querySelector('body').style.backgroundColor = "hsl(224, 36%, 15%)"; 
         document.querySelector('.container').style.backgroundColor = "hsl(222, 26%, 31%)"; 
         displayBox.style.backgroundColor = "hsl(224, 36%, 15%)"
+        displayBox.style.color = "white";
         buttonSection.style.backgroundColor = "hsl(224, 36%, 15%)"
         deleteButton.style.backgroundColor = "hsl(225, 21%, 49%)"
         resetButton.style.backgroundColor = "hsl(225, 21%, 49%)"
+        resetButton.style.color = "black"
         equalButton.style.backgroundColor = "hsl(6, 63%, 50%)"
         toggleBackground.style.backgroundColor = "hsl(223, 31%, 20%)"
     }
